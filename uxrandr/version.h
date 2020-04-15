@@ -1,0 +1,33 @@
+#ifndef VERSION_H
+#define VERSION_H
+
+#define VERSION_MAJOR 0
+#define VERSION_MINOR 0
+#define VERSION_BUILD 1
+#define VERSION_SUFFIX "Beta"
+
+#define STRINGIFY_VERSION(A, B, C) CONCAT(A, B, C )
+#define CONCAT(A, B, C ) STRINGIFY( A##.##B##.##C )
+#define STRINGIFY(A) #A
+
+#define STR_VERSION_SHORT STRINGIFY_VERSION(VERSION_MAJOR, VERSION_MINOR, VERSION_BUILD)
+#define STR_VERSION STR_VERSION_SHORT "-" VERSION_SUFFIX
+
+#define VER_FILEVERSION VERSION_MAJOR,VERSION_MINOR,VERSION_BUILD,0
+#define STR_FILEVERSION STR_VERSION
+
+// Keep the product version as fixed
+#define VER_PRODUCTVERSION VERSION_MAJOR,VERSION_MINOR,VERSION_BUILD,0
+#define STR_PRODUCTVERSION STR_VERSION
+
+#define STR_COMPANYNAME "Rainbox Laboratory"
+#define STR_FILEDESCRIPTION "uxrandr"
+#define STR_INTERNALNAME "uxrandr"
+#define STR_LEGALCOPYRIGHT "Copyright (c) 2020 Nicolas Dufresne and contributors"
+#define STR_LEGALTRADEMARKS1 "All Rights Reserved"
+#define STR_ORIGINALFILENAME "uxrandr"
+#define STR_PRODUCTNAME "uxrandr"
+
+#define STR_COMPANYDOMAIN "rainboxlab.org"
+
+#endif // VERSION_H
