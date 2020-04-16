@@ -8,6 +8,14 @@ Here is an example with three different displays:
 
 It uses xrandr, and the change is software, not hardware. That means it will work with all screen models, but at the cost of a (very little) quality loss.
 
+## Plans
+
+Next versions should include:
+
+- Presets (global and for each display)
+- White balance
+- Color space (full or TV/limited)
+
 ## Install
 
 Binaries are available in the [releases](https://github.com/Nico-Duduf/uxrandr/releases) section, or on [rainboxlab](https://rainboxlab.org)
