@@ -121,7 +121,7 @@
           <item row="1" column="1">
            <layout class="QHBoxLayout" name="horizontalLayout_4">
             <property name="spacing">
-             <number>2</number>
+             <number>6</number>
             </property>
             <item>
              <widget class="QDoubleSpinBox" name="rBox">
@@ -161,7 +161,7 @@
           <item row="3" column="1">
            <layout class="QHBoxLayout" name="horizontalLayout_6">
             <property name="spacing">
-             <number>2</number>
+             <number>6</number>
             </property>
             <item>
              <widget class="QDoubleSpinBox" name="bBox">
@@ -197,14 +197,14 @@
              <string>B</string>
             </property>
             <property name="alignment">
-             <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
             </property>
            </widget>
           </item>
           <item row="2" column="1">
            <layout class="QHBoxLayout" name="horizontalLayout_5">
             <property name="spacing">
-             <number>2</number>
+             <number>6</number>
             </property>
             <item>
              <widget class="QDoubleSpinBox" name="gBox">
@@ -234,7 +234,7 @@
           <item row="0" column="1">
            <layout class="QHBoxLayout" name="horizontalLayout_9">
             <property name="spacing">
-             <number>2</number>
+             <number>6</number>
             </property>
             <item>
              <widget class="QDoubleSpinBox" name="gammaBox">
@@ -309,7 +309,7 @@
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_7">
           <property name="spacing">
-           <number>0</number>
+           <number>6</number>
           </property>
           <item>
            <widget class="QDoubleSpinBox" name="brightBox">

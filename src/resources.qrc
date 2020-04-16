@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/styles">
+        <file alias="default">style.css</file>
+        <file alias="default-values">style-values.rui</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file alias="icon">icon.svg</file>
+        <file alias="icon_tiny">icon_tiny.png</file>
+    </qresource>
+</RCC>

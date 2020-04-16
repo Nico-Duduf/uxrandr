@@ -3,6 +3,7 @@
 #include <QApplication>
 #include <QStyleFactory>
 #include "version.h"
+#include "duui.h"
 
 int main(int argc, char *argv[])
 {
@@ -12,7 +13,7 @@ int main(int argc, char *argv[])
     QCoreApplication::setApplicationVersion(STR_VERSION);
 
     QApplication a(argc, argv);
-
+    qApp->setStyleSheet( DuUI::loadCSS() );
     UXRandR w;
     w.show();
     return a.exec();

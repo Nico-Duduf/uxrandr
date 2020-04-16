@@ -4,6 +4,9 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++11
 
+TARGET = uxrandr
+TEMPLATE = app
+
 # The following define makes your compiler emit warnings if you use
 # any Qt feature that has been marked deprecated (the exact warnings
 # depend on your compiler). Please consult the documentation of the
@@ -17,11 +20,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     display.cpp \
+    duui.cpp \
     main.cpp \
     uxrandr.cpp
 
 HEADERS += \
     display.h \
+    duui.h \
     uxrandr.h \
     version.h
 
@@ -33,3 +38,10 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+# Fix issue with c++ version used to compile Qt in some distros (Ubuntu) with Qt <= 5.12.
+# Need to check the version of c++ used with distros providing Qt > 12
+unix { equals(QT_MAJOR_VERSION, 5):lessThan(QT_MINOR_VERSION, 13):QMAKE_CXXFLAGS += "-fno-sized-deallocation" }
+
+RESOURCES += \
+    resources.qrc

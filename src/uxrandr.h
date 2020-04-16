@@ -6,6 +6,7 @@
 #include <QRegularExpression>
 
 #include "display.h"
+#include "duui.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class UXRandR; }
