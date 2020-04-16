@@ -12,6 +12,7 @@ It uses xrandr, and the change is software, not hardware. That means it will wor
 
 Next versions should include:
 
+- Remember settings between sessions
 - Presets (global and for each display)
 - White balance
 - Color space (full or TV/limited)
