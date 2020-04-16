@@ -15,6 +15,7 @@ Next versions should include:
 - Presets (global and for each display)
 - White balance
 - Color space (full or TV/limited)
+- More references to adjust settings (images and gradients)
 
 ## Install
 
